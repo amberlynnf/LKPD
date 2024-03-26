@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let kode = 12345678910 // 11 digit angka
+        let g;
+        let dd;
+        let mm;
+        let yyyy;
+        let nn;
+
+        g= Math.flooor(kode / 10000000000);
+        dd = Math.floor((kode / 100000000) % 100);
+        mm = Math.floor((kode / 1000000) % 100);
+        yyyy = Math.floor((kode / 100) % 10000)
+        nn= Math.floor(kode % 100)
+
+        console.log(yyyy)
+    </script>
+</body>
+</html>
